@@ -1,1 +1,172 @@
 /* Add CSS styling here */
+html, body, div, span, applet,
+object, iframe, h1,h2,h3,h4,h5,h6,
+p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output,
+ruby, section, summary,
+time, mark, audio, video{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto&display=swap');
+
+*{
+    border: solid 0px black;
+}
+body{
+    background-color: moccasin;
+    padding:1%;
+    border:8px solid darkgoldenrod;
+}
+p{
+    font-family:'Roboto','Raleway',san-serif;
+    font-size:1.25em;
+}
+header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:90%;
+    
+}
+ h1{
+    font-size:3em;
+    font-family:'Raleway','Roboto', sans-serif; 
+    align-content:center;
+}
+h2{
+    font-size:2.5em;
+    font-family:'Roboto','Raleway', sans-serif; 
+    justify-content:center;
+}
+nav{
+    justify-content:center;
+    margin:1.5%;
+}
+nav a{
+    border: solid 1px black;
+    padding:10px;
+    background-color: #931F21;
+    color:white;
+}
+nav a:hover{
+    background-color:orange;
+}
+nav a:active{
+    background-color:yellow;
+}
+footer{
+    display:flex;
+    flex-direction:column;
+    background-color:tan;
+    margin:-1.05%;
+
+}
+button{
+    font-size:1.5em;
+    background-color:whitesmoke;
+}
+button:hover{
+    background-color: lightslategray;
+}
+.jumboTron{
+    display:flex;
+    margin:1%;
+    max-width:95%;
+    max-height:60vh;
+    justify-content:center;
+    
+    border-radius:5px;
+}
+.jumboTron:hover{
+    box-shadow: 35px 35px tan;
+}
+.jumboTron:active{
+    transform:translateY(10px);
+    box-shadow: 25px 25px tan;
+
+}
+.jumboTron img{
+    margin:1%;
+    width:100%;
+    max-height:60vh;
+    position:static;
+    border-radius:5px;
+}
+.jumboTron button{
+    position:absolute;
+    top:60%;
+    left:50%;
+    
+    font-size:1.5em;
+}
+.social{
+    width:100%;
+}
+.social table{
+    width:100%;
+    margin:2.5%;
+}
+.social tr{
+    width:25%;
+    height:10vh;
+    margin:1%;
+    text-content:center;
+    
+}
+.social img{
+    width:60px;
+    height:60px;
+}
+#gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    width:95%;
+    margin:5%;
+    height:auto;
+}
+#gallery img{
+    margin:1%;
+    padding:1%;
+    width:15%;
+}
+#gallery img:hover{
+    transform:scale(1.15);
+}
+#gallery p{
+    margin:1%;
+    padding:1%;
+    justify-content:center;
+    
+}
+
+#one:hover{
+    transform:rotate(180deg);
+
+}
+
+#three:hover{
+    animation-name: Intro;
+    animation-duration: 2.5s;
+}
+@keyframes Intro{
+0% {transform:scale(1)}
+
+50% {transform:scale(2)}
+
+100% {transform:scale(1)}
+}
